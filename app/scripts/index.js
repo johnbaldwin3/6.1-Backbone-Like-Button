@@ -3,7 +3,7 @@ var Backbone = require('backbone');
 var $ = require('jquery');
 var likes = require('./models/like.js');
 
-console.log("like", likes.LikeButton);
+//console.log("like", likes.LikeButton);
 
 var imaButton = new likes.LikeButton();
 
