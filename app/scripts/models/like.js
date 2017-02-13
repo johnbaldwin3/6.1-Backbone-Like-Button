@@ -10,6 +10,7 @@ var LikeButton = Backbone.Model.extend({
   },
   initialize: function() {
     console.log('just for fun, initialize it');
+    //this.bind('change', this.updateHTML)
   },
   like : function() {
     var likings = this.get('likes');
