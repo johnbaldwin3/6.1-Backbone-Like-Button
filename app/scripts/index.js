@@ -7,13 +7,24 @@ var likes = require('./models/like.js');
 
 var imaButton = new likes.LikeButton();
 
-
+imaButton.on("change", function() {
+  // alert('hey there');
+  $('.like-button').text(imaButton.get('likes') + imaButton.get('label'));
+});
 
 $('.like-button').on('click', function(event){
   event.preventDefault();
+  $('.like-button').animate({
+    width: '190px',
+    height: '70px'
+  }, 100);
+  $('.like-button').animate({
+    width: '200px',
+    height: '77px'
+  },100);
   imaButton.like();
   imaButton.toJSON();
-  $('.like-button').text(imaButton.get('likes') + imaButton.get('label'));
+
   //console.log('imabutton.like()',imaButton.like());
   //console.log('clicked');
   //console.log('imabutton.get', imaButton.get('likes'));
