@@ -15,6 +15,6 @@ $('.like-button').on('click', function(event){
   imaButton.toJSON();
   $('.like-button').text(imaButton.get('likes') + imaButton.get('label'));
   //console.log('imabutton.like()',imaButton.like());
-  console.log("clicked");
+  console.log('clicked');
   console.log('imabutton.get', imaButton.get('likes'));
 });
