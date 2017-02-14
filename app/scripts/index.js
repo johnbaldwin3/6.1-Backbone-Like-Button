@@ -15,11 +15,11 @@ imaButton.on('change', function(){
 
 $('.like-button').on('click', function(event){
   event.preventDefault();
-  $('.like-button').animate({
+  $(this).animate({
     width: '198px',
     height: '75px'
   }, 100);
-  $('.like-button').animate({
+  $(this).animate({
     width: '200px',
     height: '77px'
   }, 100);
