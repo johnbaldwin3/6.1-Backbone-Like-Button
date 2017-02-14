@@ -12,9 +12,9 @@ var LikeButton = Backbone.Model.extend({
     console.log('just for fun, initialize it');
   },
   like : function() {
-  var likings = this.get('likes');
-  this.set('likes', likings +1);
-    console.log('i\'ve been liked');
+    var likings = this.get('likes');
+    this.set('likes', likings +1);
+    //  console.log('i\'ve been liked');
     // this.toJSON();
   },
   toJSON : function() {
@@ -29,5 +29,5 @@ var LikeButton = Backbone.Model.extend({
 
 
 module.exports = {
-'LikeButton': LikeButton
+  'LikeButton': LikeButton
 };
