@@ -1,5 +1,5 @@
 
-var Backbone = require('backbone');
+//var Backbone = require('backbone');
 var $ = require('jquery');
 var likes = require('./models/like.js');
 
@@ -17,7 +17,7 @@ $('.like-button').on('click', function(event){
   event.preventDefault();
   $(this).animate({
     width: '198px',
-    height: '75px'
+    height: '75px',
   }, 100);
   $(this).animate({
     width: '200px',
